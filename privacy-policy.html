@@ -99,10 +99,11 @@
   <!-- ── 2. Internet Access ── -->
   <h2>2. Internet &amp; Network Access</h2>
   <p>
-    Card Box does <strong>not</strong> hold the Android
-    <code>INTERNET</code> permission. The app cannot make any network request
-    — for telemetry, crash reporting, advertising, analytics, sync, or any
-    other purpose. The only Android permissions the app requests are
+    The app itself initiates no network requests — no telemetry, crash
+    reporting, advertising, analytics, sync, or any other purpose. (The
+    Android <code>INTERNET</code> permission appears in the manifest
+    because bundled libraries declare it; your data is never
+    transmitted.) The only Android permissions the app requests are
     <code>CAMERA</code> (for scanning barcodes/QR codes and capturing the
     front and back of a card), <code>NFC</code> (for reading contactless
     cards), <code>USE_BIOMETRIC</code> (for the optional app lock), and

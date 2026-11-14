@@ -187,8 +187,7 @@
   <p>
     No data is shared with any third party. Card Box has no backend server,
     no analytics service, no advertising network, and no third-party SDKs that
-    transmit data. The app does not even hold the Android
-    <code>INTERNET</code> permission.
+    transmit data: the app itself initiates no network requests.
   </p>
 
   <!-- ── Security Practices ── -->
@@ -203,7 +202,7 @@
     <tbody>
       <tr>
         <td>Data encrypted in transit</td>
-        <td class="yes">N/A — no data is transmitted (no INTERNET permission)</td>
+        <td class="yes">N/A — no data is transmitted</td>
       </tr>
       <tr>
         <td>Data encrypted at rest</td>
@@ -251,7 +250,7 @@
       </tr>
       <tr>
         <td>Is all of the user data collected by your app encrypted in transit?</td>
-        <td>N/A (no data transmitted — no INTERNET permission)</td>
+        <td>N/A (no data transmitted)</td>
       </tr>
       <tr>
         <td>Do you provide a way for users to request that their data is deleted?</td>
